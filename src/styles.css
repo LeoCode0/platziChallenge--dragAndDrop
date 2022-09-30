@@ -1,0 +1,83 @@
+:root{
+  --bg-color: #121f3d;
+  --border-color: #caf0f8;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: sans-serif;
+  color: white;
+  background-color: var(--bg-color);
+}
+
+ul{
+  list-style: none;
+}
+
+h1{
+  text-align: center;
+  margin: 20px;
+  font-size: 4rem;
+}
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 40%;
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding: 5px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.list{
+  display: block;
+}
+
+.list--item{
+  display: flex;
+  font-size: 2.4rem;
+  margin-bottom: 4px;
+}
+
+.list--item span{
+  display: block;
+  padding: 10px;
+  margin-right: 5px;
+  border-right: 2px solid var(--border-color);
+  width: 10%;
+}
+
+.item--draggable{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-around;
+}
+
+form.container label, form.container input, form.container button{
+  width: 100%;
+  font-size: 2.6rem;
+  margin: 5px 0;
+}
+
+form.container input, form.container button{
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  background: transparent;
+  color: white;
+}
