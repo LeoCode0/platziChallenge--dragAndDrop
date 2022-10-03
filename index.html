@@ -12,6 +12,7 @@
 <body>
   <h1>Mi lista de compras</h1>
   <section class="hero">
+    <h2>Local list</h2>
     <ul class="list container" id="list">
     </ul>
     <form class="container" id="form">
@@ -21,6 +22,12 @@
       <input type="text" name="price" id="price" placeholder="Escribe el precio de tu producto">
       <button type="submit" id="sumbit-button">Agregar producto</button>
     </form>
+  </section>
+  <button id="local-button" type="button">Clear local list</button>
+  <section class="online-products">
+    <h2>Online list</h2>
+    <ul class="list container" id="online-list"></ul>
+    <button id="online-button" type="button">Get next items</button>
   </section>
   <script src="./src/index.js"></script>
 </body>
